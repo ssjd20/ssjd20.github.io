@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MasterGames</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="icon" href="img/logo.jpg" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="./index.html" aria-label="Página principal">MasterGames</a>
+            </div>
+            <div class="menu">
+                <ul class="nav-links">
+                    <li><a href="secciones/productos.html" class="nav-link" id="productos-link">Productos</a></li>
+                    <li><a href="secciones/presupuesto.html" class="nav-link" id="presupuesto-link">Presupuesto</a></li>
+                    <li><a href="secciones/contacto.html" class="nav-link" id="contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="productos">
+            <h1>Productos</h1>
+            <p>Los mejores juegos disponibles a los mejores precios, solo para PlayStation 5 y Xbox.</p>
+
+            <div class="lista-productos">
+                <!-- Primera fila de imágenes -->
+                <figure>
+                    <img src="./img/asa.jpg" alt="Portada del juego Ark Ascendant" width="1024" height="1024">
+                    <figcaption>Ark Ascendant</figcaption>
+                </figure>
+                <figure>
+                    <img src="./img/blackops.jpg" alt="Portada del juego Call of Duty: Black Ops 6" width="1024" height="1024">
+                    <figcaption>Call of Duty: Black Ops 6</figcaption>
+                </figure>
+                <figure>
+                    <img src="./img/dragon.jpg" alt="Portada del juego Dragon Ball Sparking 0" width="1024" height="1024">
+                    <figcaption>Dragon Ball Sparking 0</figcaption>
+                </figure>
+                <figure>
+                    <img src="./img/fifa.jpg" alt="Portada del juego FIFA 25" width="1024" height="1024">
+                    <figcaption>FIFA 25</figcaption>
+                </figure>
+                <!-- Segunda fila de imágenes -->
+                <figure>
+                    <img src="./img/ragnarok.jpg" alt="Portada del juego God of War: Ragnarök" width="580" height="870">
+                    <figcaption>God of War: Ragnarök</figcaption>
+                </figure>
+                <figure>
+                    <img src="./img/valhalla.jpg" alt="Portada del juego Assassin's Creed Valhalla" width="1024" height="1024">
+                    <figcaption>Assassin's Creed Valhalla</figcaption>
+                </figure>
+                <figure>
+                    <img src="./img/thelastofus.jpg" alt="Portada del juego The Last of Us" width="307" height="461">
+                    <figcaption>The Last of Us</figcaption>
+                </figure>
+                <figure>
+                    <img src="./img/gta5.jpg" alt="Portada del juego Grand Theft Auto V" width="1200" height="900">
+                    <figcaption>Grand Theft Auto V</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section id="presupuesto">
+            <h2>Formulario de Presupuesto</h2>
+            <p>Completa el formulario a continuación para solicitar información personalizada.</p>
+        
+            <form id="presupuesto-form">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required pattern="[A-Za-zÁÉÍÓÚáéíóúñÑ\s]+" 
+                        title="Solo se permiten letras y espacios" aria-describedby="nombre-error">
+                    <div id="nombre-error" class="error" aria-live="polite"></div>
+                </div>
+        
+                <div class="form-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" 
+                        title="Introduce un correo válido" aria-describedby="email-error">
+                    <div id="email-error" class="error" aria-live="polite"></div>
+                </div>
+        
+                <div class="form-group">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{10}" 
+                        title="Introduce un número válido de 10 dígitos" aria-describedby="telefono-error">
+                    <div id="telefono-error" class="error" aria-live="polite"></div>
+                </div>
+        
+                <div class="form-group">
+                    <label for="informacion">Solicite más información:</label>
+                    <textarea id="informacion" name="informacion" rows="4" required aria-describedby="informacion-error"></textarea>
+                    <div id="informacion-error" class="error" aria-live="polite"></div>
+                </div>
+        
+                <div class="form-group">
+                    <label for="politica">
+                        <input type="checkbox" id="politica" name="politica" required>
+                        Acepto la <a href="./politica_privacidad.html" target="_blank" rel="noopener noreferrer">Política de Privacidad</a>
+                    </label>
+                    <div id="politica-error" class="error" aria-live="polite"></div>
+                </div>
+        
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        
+
+    <section id="contacto2">
+        <h2>Contacto</h2>
+        <h3>Estaremos encantados de ayudarte en nuestras instalaciones</h3>
+        
+        <div class="contact-info">
+            <p><strong>Dirección:</strong> Calle Ficticia 123, Oficina 45, Ciudad Inventada, CP 98765, España</p>
+            <p><strong>Teléfono:</strong> <a href="tel:+34912345678">+34 912 345 678</a></p>
+            <p><strong>Correo Electrónico:</strong> <a href="mailto:contacto@empresa.com">contacto@empresa.com</a></p>
+            <p><strong>Horario de Atención:</strong> Lunes a Viernes, de 9:00 AM a 6:00 PM</p>
+        </div>
+        
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2997.108648400294!2d2.0232197104641867!3d41.30649997119063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a49cff51f1db41%3A0xc412981c9dbde790!2sViladecans%20The%20Style%20Outlets!5e0!3m2!1ses!2ses!4v1737200290933!5m2!1ses!2ses" 
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" 
+                    aria-label="Ubicación de Viladecans The Style Outlets en el mapa">
+            </iframe>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-icons">
+            <a href="https://www.instagram.com/xbox/" target="_blank" aria-label="Instagram de Xbox">
+                <img src="./img/logoxbox.jpg" alt="Logo de Xbox" class="icon">
+            </a>
+            <a href="https://www.instagram.com/playstation/" target="_blank" aria-label="Instagram de PlayStation">
+                <img src="./img/logoplay5.jpg" alt="Logo de PlayStation" class="icon">
+            </a>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2025 MasterGames</p>
+        </div>
+
+        <div class="legal-notice">
+            <p><a href="ENLACE_DEL_AVISO_LEGAL" target="_blank" rel="noopener noreferrer">Aviso Legal</a> | <a href="ENLACE_DE_LA_POLITICA_DE_PRIVACIDAD" target="_blank" rel="noopener noreferrer">Política de Privacidad</a></p>
+        </div>
+    </footer>
+    </main>
+</body>
+</html>

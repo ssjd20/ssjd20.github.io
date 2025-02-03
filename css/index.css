@@ -1,0 +1,319 @@
+/* Reset de márgenes y paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fuentes globales */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #f4f4f4; /* Color del texto: blanco */
+    background-color: #111; /* Fondo negro */
+}
+
+/* Estilos del header */
+header {
+    background-color: #e11414; /* Rojo */
+    color: #f4f4f4; /* Blanco */
+    padding: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    color: #ffffff; /* Blanco */
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.menu .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu .nav-links .nav-link {
+    color: #ffffff; /* Blanco */
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.menu .nav-links .nav-link:hover {
+    color: #e1ff38; /* Amarillo */
+}
+
+.btn-inicio {
+    background-color: #fafffc; /* Blanco */
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #000000; /* Rojo */
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-inicio:hover {
+    background-color: #ffdd57; /* Amarillo */
+    color: #000000; /* Texto negro */
+}
+
+/* Estilos de las secciones */
+main {
+    padding: 40px;
+    background-color: #222; /* Fondo oscuro */
+}
+
+h1, h2, h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #f4f4f4; /* Blanco */
+}
+
+#productos p {
+    margin-bottom: 40px;
+    font-size: 1.2rem;
+    color: #f4f4f4; /* Blanco */
+}
+
+/* Sección de productos */
+#productos {
+    padding: 50px 30px;
+    text-align: center;
+}
+
+#productos h1 {
+    font-size: 3.5rem;
+    color: #ffffff;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+#productos h2 {
+    font-size: 1.4rem;
+    margin-bottom: 40px;
+}
+
+.lista-productos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px 2rem; /* Espaciado de 2rem entre filas y columnas */
+    justify-items: center;
+}
+
+.lista-productos figure {
+    margin: 0;
+    width: 100%; /* Asegura que las imágenes ocupen todo el ancho del contenedor */
+    height: 550px; /* Ajustamos la altura del contenedor a 450px */
+}
+
+.lista-productos img {
+    width: 100%; /* Asegura que las imágenes ocupen todo el ancho del contenedor */
+    height: 450px; /* Ajustamos la altura de las imágenes a 450px */
+    object-fit: cover; /* Asegura que las imágenes se recorten proporcionalmente */
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.lista-productos img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+.lista-productos figcaption {
+    color: #fff;
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .lista-productos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .lista-productos {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Estilos del formulario */
+#presupuesto {
+    background-color: #333; /* Fondo oscuro */
+    padding: 40px;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ffdd57; /* Amarillo */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+    background-color: #444; /* Fondo oscuro para los inputs */
+    color: #f4f4f4; /* Texto blanco */
+}
+
+button[type="submit"] {
+    background-color: #ffffff; /* Rojo */
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #f50057; /* Rojo más intenso */
+}
+
+/* Sección de contacto */
+#contacto2 {
+    background-color: #222; /* Fondo oscuro */
+    padding: 40px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.contact-info p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #f4f4f4; /* Blanco */
+}
+
+.contact-info a {
+    color: #ffdd57; /* Amarillo */
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 450px;
+    border: none;
+}
+
+/* Estilo del pie de página */
+footer {
+    background-color: #111; /* Fondo negro */
+    color: white;
+    padding: 20px 40px;
+    text-align: center;
+}
+
+.footer-icons a {
+    margin: 0 10px;
+}
+
+.footer-icons .icon {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
+}
+
+.footer-icons .icon:hover {
+    transform: scale(1.2);
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #ff4081; /* Rojo */
+}
+
+.copyright p {
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+.legal-notice p {
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+/* Estilo para los enlaces de navegación */
+.nav-links .nav-link {
+    color: #000; /* Color por defecto de los enlaces */
+    text-decoration: none; /* Quitar subrayado */
+    padding: 10px; /* Espaciado para mejor clicabilidad */
+    transition: color 0.3s ease, background-color 0.3s ease; /* Transición suave al hacer hover */
+}
+
+/* Estilo cuando el enlace está activo */
+.nav-links .active {
+    color: #FFD700; /* Color amarillo para el enlace activo */
+    font-weight: bold; /* Hacer el enlace activo más llamativo */
+    text-decoration: underline; /* Subrayar el enlace activo */
+}
+
+/* Efecto de hover para los enlaces */
+.nav-links .nav-link:hover {
+    color: #ff5733; /* Cambiar color al pasar el ratón */
+    background-color: rgba(255, 87, 51, 0.1); /* Fondo suave para hover */
+}
+/* Estilo general para la barra de navegación */
+.navbar {
+    background-color: #333;
+    padding: 10px;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    padding: 0;
+}
+
+.navbar .nav-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.navbar .nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: background-color 0.3s, border-bottom 0.3s; /* Añadimos transición para el subrayado */
+}
+
+/* Estilo cuando el enlace es activo (con subrayado) */
+.navbar .nav-link.active {
+    color: rgb(255, 0, 0); /* Cambiar el color del texto, si lo prefieres */
+    border-bottom: 3px solid rgb(0, 255, 51); /* Añadir subrayado amarillo */
+}
+
+/* Estilo cuando el usuario pasa el ratón sobre el enlace */
+.navbar .nav-link:hover {
+    background-color: #ff0000;
+    color: #fff;
+}
